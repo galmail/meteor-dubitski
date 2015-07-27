@@ -5,7 +5,18 @@ Router.route('/', function () {
   this.render('home', {data: {title: 'The Dubitski Family'}});
 });
 
+/// NAOMI ROUTES ///
+
 Router.route('/naomi');
+Router.route('/naomi/code', function () {
+  this.render('naomi-coding');
+});
+Router.route('/naomi/code/lesson1', function () {
+  this.render('lesson1');
+});
+
+/// OTHER ROUTES ///
+
 Router.route('/eitan');
 Router.route('/laura');
 Router.route('/gal');
